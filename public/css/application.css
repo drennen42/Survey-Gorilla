@@ -1,11 +1,26 @@
+html {
+	width: 100%;
+	height: 100%;
+	background-color: #433f40; 
+	font-family: 'Raleway', sans-serif;
+}
+
 .container {
 	width: 100%;
 	height: 100%;
+	margin-bottom: 3%;
 }
 
 header {
 	text-align: center;
+	font-size: 9em;
 }
+
+span a {
+	color: #968985;
+
+}
+
 
 ul {
 	list-style: none;
@@ -36,6 +51,71 @@ div.buttonWrapper {
 	text-align: center;
 }
 
+div.profile {
+width: 30%;
+height: 100%;
+margin-right: auto;
+margin-left: auto;
+background-color: #ddcec3;
+border: solid #fbf3ee 3px;
+border-radius: 1px;
+padding: 50px;
+padding-bottom: 0;
+margin-top: 3%;
+margin-bottom: 2%;
+}
+
+div.newSurvey {
+padding: 7px;
+padding-top: 15px;
+border: solid #fbf3ee 3px;
+width: 142px;
+margin-left: 68%;
+background-color: #ddcec3;
+border-radius: 1px;
+height: 26px;
+margin-top: 40%;
+}
+
+a.surveyList {
+	padding: 30px;
+}
+
+h2.surveyList {
+	margin-top: 30%;
+}
+
+div.logoutButton {
+	padding: 10px;
+	border: solid #ddcec3 5px;
+background-color: #fbf3ee;
+	margin-right: 2%;
+		float: right;	
+
+}
+
+h1.titleHead {
+	width: 20%;
+	text-align: center;
+	float: left;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+div.form {
+	margin-top: 4%;
+	margin-right: 4%;
+	margin-left: 3.6%;
+	padding-top: 4%;
+	padding-bottom: 8%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.2);
+}
+
+
 form.horizontal {
 	width: 60%;
 	margin-left: auto;
@@ -44,13 +124,83 @@ form.horizontal {
 
 input.button {
 	width: 50%;
+	background: #f9f5f2;
+	padding: 6px;
 }
 
 input.userInfo {
 	width: 88%;
 	margin: 40px;
+	padding: 4px;
 }
 
 span.title {
 	
+}
+
+#createQuestion {
+	text-align: center
+}
+
+div label{
+	font-size: 2em;
+}
+
+input.question_title.needs_clear {
+	padding-top: 10px;
+	margin-bottom: 15px;
+}
+
+p input{
+	margin: 20px;
+}
+
+#main {
+	width: 65%;
+	margin-top: 3%;
+	padding: 10px;
+margin-left: auto;
+margin-right: auto;
+background-color: #968985;
+}
+
+body a div {
+	text-align: center;
+border: solid white 1px;
+font-size: 2em;
+width: 230px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 5px;
+}
+
+#main a {
+
+border: solid white 1px;
+width: 10px;
+padding: 5px;
+margin: 2px;
+
+}
+
+form{
+
+}
+
+.listItem {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+}
+
+.questionList {
+	background-color: #fbf3ee;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px;
+	margin-top: 5%;
 }

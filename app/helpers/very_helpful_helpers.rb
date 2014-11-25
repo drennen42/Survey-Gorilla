@@ -63,3 +63,11 @@ def render_questions(question)
   end
   return question_string
 end
+
+def render_logout
+  if session[:user_id]
+    "<div class='logoutButton'><a href='/signout'>Sign Out</a></div>"
+  else
+    ""
+  end
+end

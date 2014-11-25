@@ -1,7 +1,18 @@
-<h1><%= @user.username %></h1>
+<h1 class="titleHead">SURVEY GORILLA</h1>
+
+<div class='holdAll'>
+<div class='profile'>
+
 <ul>
+<h1><%= @user.username %></h1>
+<%if @user.surveys%>
+	<h2 class="surveyList">Surveys:</h2>
+<%end%>
+
   <% @user.surveys.each do |survey| %>
-  <p class="show_survey"><a href="/surveys/<%= survey.id %>"><%= survey.name %></a></p>
+  <p class="show_survey"><a class="surveyList" href="/surveys/<%= survey.id %>"><%= survey.name %></a></p>
   <% end %>
+<div class="newSurvey"><a href="/surveys/new">Create New Survey</a
+  </div>
 </ul>
-<a href="/surveys/new">Create New Survey</a>
+</div>

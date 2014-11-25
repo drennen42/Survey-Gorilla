@@ -11,7 +11,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400+700);
 body {
   /*background: #30303A;*/
-  font-family: Roboto;
+  font-family: 'Raleway', sans-serif;
 }
 #chart {
   width: 650px;
@@ -32,7 +32,7 @@ body {
   padding-right: 1em;
   list-style: none;
   height: 29px;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #858d5d;
   position: relative;
   bottom: 30px;
 }
@@ -40,7 +40,7 @@ body {
   height: 30px;
 }
 #chart #numbers li span {
-  color: #eee;
+  color: #858d5d;
   position: absolute;
   bottom: 0;
   right: 10px;
@@ -66,22 +66,22 @@ body {
   display: block;
   width: 70px;
   margin-left: 15px;
-  background: #49E;
+  background: #858d5d;
   position: absolute;
   bottom: 0;
 }
 #chart #bars li .bar:hover {
-  background: #5AE;
+  background: #b5bf8f;
   cursor: pointer;
 }
 #chart #bars li .bar:hover:before {
-  color: green;
+  color: #b5bf8f;
   content: attr(data-percentage) '%';
   position: relative;
   bottom: 20px;
 }
 #chart #bars li span {
-  color: green;
+  color: #858d5d;
   width: 100%;
   position: absolute;
   bottom: -2em;
