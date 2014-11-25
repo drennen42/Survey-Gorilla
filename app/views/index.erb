@@ -1,0 +1,39 @@
+
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/bigvideo.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito:400,700">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+  <script type="text/javascript" src="http://vjs.zencdn.net/c/video.js"></script>
+   <script type="text/javascript" src="js/bigvideo.js"></script>
+
+</head>
+<body>
+
+	<div id="wrap">
+	  <h1>SURVEY GORILLA</h1>
+	  <ul>
+        <li id="signin"><a id="signin" href="/signin">Sign In</a></li>
+        <li id="signup"><a id="signup" href="/users/new">Sign Up</a></li>
+      </ul>
+      <p id="authenticate-render"></p>
+	</div>
+    
+    <script type="text/javascript">
+      var BV;
+      $(function() {
+        // initialize BigVideo
+        BV = new $.BigVideo();
+        BV.init();
+        BV.show('/trimmed.mp4',{ambient:true}, {doLoop:true});
+	    });
+    </script>
+    
+
+</body>
+
+</html>

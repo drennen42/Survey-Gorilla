@@ -1,0 +1,13 @@
+<section id="main">
+
+<h1><%= @survey.name %></h1>
+<ul>
+  <% @survey.questions.each do |question| %>
+    <%= render_questions(question) %>
+  <% end %>
+  <br>
+    <button type='submit'>Submit Answers</button>
+  </form>
+</ul>
+
+

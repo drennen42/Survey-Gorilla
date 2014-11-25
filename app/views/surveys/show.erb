@@ -1,0 +1,30 @@
+<section id="main">
+  <form method="post" id="createQuestion">
+    <p>
+      <span id="addVar">Add Option</span>
+    </p>
+    <p>
+      <input type="submit" value="Add to Survey">
+    </p>
+  </form>
+
+<div>
+	<h1><%= @survey.name %></h1>
+	<%= make_edit_button_for_survey_title(@survey) %>
+</div>
+
+<ul>
+  <% @survey.questions.each do |question| %>
+    <%= render_question_and_choices(question) %>
+  <% end %>
+  </form>
+</ul>
+
+<% if @user && @user.id == @survey.creator_id %>
+  <a href="/surveys/<%= @survey.id %>/edit">Edit</a>
+  <a href="/surveys/<%= @survey.id %>">Delete</a>
+  <a href="/surveys/<%= @survey.id %>/show_results">Results</a>
+  </section>
+  <a href='/users/<%= @user.id %>'><div>Done working!</div></a>
+<% end %>
+

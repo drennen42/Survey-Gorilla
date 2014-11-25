@@ -1,0 +1,7 @@
+<h1><%= @user.username %></h1>
+<ul>
+  <% @user.surveys.each do |survey| %>
+  <p class="show_survey"><a href="/surveys/<%= survey.id %>"><%= survey.name %></a></p>
+  <% end %>
+</ul>
+<a href="/surveys/new">Create New Survey</a>

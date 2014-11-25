@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/stats.css">
+  </head>
+  <body>
+    <p>Stats for the question with id #: <%= @question.id %></p>
+      <br>
+      <ul>
+        <li>Survey Name: <%= Survey.find(@question.survey_id).name %></li>
+        <li>Survey ID: <%= @question.survey_id %></li>
+        <li>Choices: </li>
+        <div id="chart">
+          <h3 style="text-align:center;">Question: <%= @question.text %></h3>
+        <ul id="bars">
+        <% @question.choices.each do |choice| %>
+        <% if @question.respondents.length == 0 %>
+        <% percent = 0 %>
+        <% else %>
+        <% percent = (((choice.answers.length) / (@question.respondents.length).to_f)*100).to_i %>
+        <% end %>
+        <li><div data-percentage="<%= percent %>" class="bar"></div><span><%= choice.text %> - <%= percent %>%</span></li>
+        <% end %>
+        </ul>
+      </div>
+      </ul>
+  </body>
+</html>
